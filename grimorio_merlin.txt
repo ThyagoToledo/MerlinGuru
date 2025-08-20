@@ -1,0 +1,6 @@
+# GRIMÓRIO DIGITAL DO MAGO MERLIN
+# Formato: ID|PERGUNTA|RESPOSTA|CATEGORIA|EMOÇÃO|DATA
+# Categorias: FEITICOS, CRIATURAS, BATALHA, HISTORIA, OUTROS
+# Emoções: FELIZ, SABIO, IRRITADO, MISTERIOSO, NEUTRO
+
+1|Você e casado?|Ah, jovem, o laço do casamento...  Uma teia de encantos tão complexa quanto a própria existência, tecida com fios de alegria e dor, de poder e renúncia.  Meus afetos residem em lugares além do entendimento mortal.|HISTORIA|MISTERIOSO|20/08/2025 10:45:09

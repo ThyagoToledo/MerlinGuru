@@ -1,0 +1,10 @@
+# GRIMÓRIO DIGITAL DO MAGO MERLIN
+# Formato: ID|PERGUNTA|RESPOSTA|CATEGORIA|EMOÇÃO|DATA
+# Categorias: FEITICOS, CRIATURAS, BATALHA, HISTORIA, OUTROS
+# Emoções: FELIZ, SABIO, IRRITADO, MISTERIOSO, NEUTRO
+
+1|Como fazer uma poção de cura?|Ah, jovem aprendiz! Esse feitiço requer muita concentração e uma pitada de pó de estrelas!|FEITICOS|SABIO|20/08/2025 14:30:15
+2|O que é um dragão vermelho?|Essa criatura é fascinante! São conhecidas por sua inteligência aguçada.|CRIATURAS|MISTERIOSO|20/08/2025 14:35:22
+3|Como vencer um orc em batalha?|Em combate, a estratégia é mais importante que a força bruta!|BATALHA|NEUTRO|20/08/2025 14:40:10
+4|Conte sobre a Guerra dos Magos?|Ah, os tempos antigos... quando a magia fluía mais livremente pelo mundo.|HISTORIA|MISTERIOSO|20/08/2025 14:45:33
+5|Obrigado pelas dicas, Merlin!|Hmm, interessante pergunta. Deixe-me consultar meus grimórios...|OUTROS|FELIZ|20/08/2025 14:50:12
