@@ -1,0 +1,75 @@
+Chave api gemini: AIzaSyCUoLD8mDMDzaTR9iYKZIJy4JzanGicxzA
+
+Jogo do mago guru Merlin, ele vai responder perguntas relacionadas a Rpg e a magia do usuário, com interface, terá reações de acordo com a pergunta e humor, o usuário poderá escrever os textos para conversar com o Merlin, usando a API do google gemini, texto formatado para o usuário e ele o código recebera uma parte do texto que não aparecera para o usuário que diz a emoção dele
+
+Desenvolvimento de Aplicativo Java com GUI e Manipulação de Arquivos
+Desenvolver um aplicativo em Java, utilizando JavaFX (ou Swing), que possua uma interface gráfica funcional e realize operações de CRUD (Create, Read, Update, Delete) sobre registros armazenados em um arquivo de texto. O trabalho será realizado individualmente ou em duplas.
+
+Requisitos do trabalho:
+1. Tema Livre
+O aplicativo pode ser desenvolvido com qualquer temática, desde que envolva registros manipulados em arquivo de texto. Exemplos incluem:
+
+Gerenciador de contatos (nome, telefone, e-mail)
+
+Catálogo de produtos
+
+Lista de tarefas (to-do list)
+
+Biblioteca de livros
+
+Controle de notas escolares
+
+Agenda simples
+
+2. Estrutura e Conteúdo
+O aplicativo deve conter:
+
+Interface Gráfica (GUI) construída em JavaFX (ou Swing).
+
+CRUD completo sobre os registros (inserir, listar, editar e excluir).
+
+Arquivo de texto como forma de persistência dos dados (txt).
+
+Validação básica de entradas (não aceitar campos vazios, formatos inválidos, etc.).
+
+3. Design e Layout
+A interface deve ser clara, organizada e intuitiva.
+
+Deve conter menus, botões ou formulários que permitam ao usuário interagir facilmente com os registros.
+
+4. Funcionalidade Obrigatória
+O usuário deve conseguir criar registros via formulário na interface.
+
+O sistema deve ler os registros salvos e exibi-los na tela (ex.: em uma tabela ou lista).
+
+O usuário deve conseguir atualizar registros existentes.
+
+O usuário deve conseguir excluir registros.
+
+Todas as alterações devem ser refletidas no arquivo de texto.
+
+5. Vídeo
+Cada aluno/dupla deverá produzir um vídeo de no mínimo 5 minutos, contendo:
+
+Explicação do conceito do aplicativo (tema e utilidade).
+
+Demonstração prática da interface (navegação pelos menus, botões, etc.).
+
+Demonstração das operações CRUD no arquivo (criação, listagem, edição e exclusão).
+
+Explicação técnica resumida sobre como ocorre a manipulação do arquivo de texto.
+
+Elementos criativos para tornar a apresentação envolvente (dramatização do uso no cotidiano, simulação de usuário real, etc.).
+
+Critérios de Avaliação
+Qualidade do Código: organização, legibilidade e boas práticas.
+
+Funcionalidade: implementação correta das operações CRUD.
+
+Persistência: leitura e escrita correta no arquivo de texto.
+
+Design e Usabilidade: interface clara e intuitiva.
+
+Inovação: criatividade no tema e na forma de apresentar.
+
+Vídeo: clareza, didática e criatividade na explicação.
