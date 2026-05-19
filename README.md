@@ -1,29 +1,29 @@
-# 🧙‍♂️ Grimório Digital do Mago Merlin
+#  Grimório Digital do Mago Merlin
 
-## 📋 Descrição do Projeto
+##  Descrição do Projeto
 
 O **Grimório Digital do Mago Merlin** é uma aplicação Java que combina:
-- 🎮 **Jogo interativo**: Conversa com o Mago Merlin sobre RPG, magia e fantasia
-- 💾 **Sistema CRUD**: Gerenciamento completo de consultas em arquivo TXT
-- 🖥️ **Interface gráfica**: GUI moderna usando Swing
-- 🤖 **IA Real**: Integração com Google Gemini API para respostas inteligentes
+-  **Jogo interativo**: Conversa com o Mago Merlin sobre RPG, magia e fantasia
+-  **Sistema CRUD**: Gerenciamento completo de consultas em arquivo TXT
+-  **Interface gráfica**: GUI moderna usando Swing
+-  **IA Real**: Integração com Google Gemini API para respostas inteligentes
 
-## 🎯 Requisitos Atendidos
+##  Requisitos Atendidos
 
-### ✅ Funcionalidades Obrigatórias
+##  Funcionalidades Obrigatórias
 - [x] Interface Gráfica (Swing)
 - [x] CRUD completo (Create, Read, Update, Delete)
 - [x] Persistência em arquivo de texto
 - [x] Validação de entradas
 - [x] Interface intuitiva e organizada
 
-### ✅ Tema Criativo
+##  Tema Criativo
 - Grimório de consultas mágicas
 - Personagem carismático (Mago Merlin)
 - Sistema de emoções e reações
 - Categorização temática
 
-## 🏗️ Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 Java/
@@ -39,13 +39,13 @@ Java/
 └── README.md               # Este arquivo
 ```
 
-## 🚀 Como Compilar e Executar
+##  Como Compilar e Executar
 
-### Pré-requisitos
+## Pré-requisitos
 - Java Development Kit (JDK) 8 ou superior
 - Sistema operacional: Windows, Linux ou macOS
 
-### Compilação
+## Compilação
 ```bash
 # Navegar até o diretório do projeto
 cd "c:\Users\aluno.LabLenovo06\Desktop\dev\Java"
@@ -54,20 +54,20 @@ cd "c:\Users\aluno.LabLenovo06\Desktop\dev\Java"
 javac *.java
 ```
 
-### Execução
+## Execução
 ```bash
 # Executar o programa principal
 java MerlinGUI
 ```
 
-## 🎮 Como Usar
+##  Como Usar
 
-### 1. Iniciando o Programa
+## 1. Iniciando o Programa
 - Execute `java MerlinGUI`
 - A interface será aberta em tela cheia
 - Merlin aparecerá com emoção NEUTRO inicialmente
 
-### 2. Fazendo uma Consulta (CREATE)
+## 2. Fazendo uma Consulta (CREATE)
 1. Digite sua pergunta no campo "Pergunta"
 2. Selecione uma categoria:
    - **FEITICOS**: Perguntas sobre magias e encantamentos
@@ -75,34 +75,34 @@ java MerlinGUI
    - **BATALHA**: Perguntas sobre combate e estratégia
    - **HISTORIA**: Perguntas sobre lendas e eventos antigos
    - **OUTROS**: Perguntas gerais
-3. Clique em "🔮 Consultar Merlin"
+3. Clique em "Consultar Merlin"
 4. Aguarde a resposta (2-5 segundos da API Google Gemini)
 5. A consulta será salva automaticamente no grimório
 
-### 🤖 **Integração com IA Real**
+##  **Integração com IA Real**
 O projeto utiliza a **classe Inteligencia** que integra com a **Google Gemini API**:
 - **Respostas Inteligentes**: IA real do Google gera respostas contextuais
 - **Prompts Personalizados**: Cada categoria tem contexto específico para Merlin
 - **Detecção de Emoções**: IA indica automaticamente a emoção do Mago
 - **Sistema de Backup**: Fallback offline se a API estiver indisponível
 
-### 3. Visualizando Consultas (READ)
+## 3. Visualizando Consultas (READ)
 - Todas as consultas aparecem na tabela inferior
 - Informações mostradas: ID, Pergunta, Categoria, Emoção, Data
-- Use "🔄 Atualizar Lista" para recarregar
+- Use "Atualizar Lista" para recarregar
 
-### 4. Editando Consultas (UPDATE)
+## 4. Editando Consultas (UPDATE)
 1. Selecione uma linha na tabela
-2. Clique em "✏️ Editar Selecionada"
+2. Clique em "Editar Selecionada"
 3. Modifique a pergunta e/ou categoria
 4. Confirme as alterações
 
-### 5. Excluindo Consultas (DELETE)
+## 5. Excluindo Consultas (DELETE)
 1. Selecione uma linha na tabela
-2. Clique em "🗑️ Excluir Selecionada"
+2. Clique em "Excluir Selecionada"
 3. Confirme a exclusão
 
-## 📁 Formato do Arquivo TXT
+##  Formato do Arquivo TXT
 
 O arquivo `grimorio_merlin.txt` é gerado automaticamente com o formato:
 
@@ -116,46 +116,46 @@ O arquivo `grimorio_merlin.txt` é gerado automaticamente com o formato:
 2|Que criatura é o dragão?|Essa criatura é fascinante! São conhecidas por sua inteligência aguçada.|CRIATURAS|MISTERIOSO|20/08/2025 14:35:22
 ```
 
-## 🎭 Sistema de Emoções
+##  Sistema de Emoções
 
 O Merlin reage às perguntas com diferentes emoções:
 
-- 😊 **FELIZ**: Quando agradecido ou satisfeito
-- 🤔 **SABIO**: Para perguntas complexas sobre feitiços
-- 😠 **IRRITADO**: Para perguntas ofensivas
-- 🔮 **MISTERIOSO**: Para assuntos históricos ou criaturas
-- 😐 **NEUTRO**: Estado padrão
+-  **FELIZ**: Quando agradecido ou satisfeito
+-  **SABIO**: Para perguntas complexas sobre feitiços
+-  **IRRITADO**: Para perguntas ofensivas
+-  **MISTERIOSO**: Para assuntos históricos ou criaturas
+-  **NEUTRO**: Estado padrão
 
-## 🛠️ Validações Implementadas
+##  Validações Implementadas
 
-### Entrada de Dados
-- ❌ Pergunta não pode estar vazia
-- ❌ Categoria deve ser uma das opções válidas
-- ❌ Campos não podem conter apenas espaços
+## Entrada de Dados
+-  Pergunta não pode estar vazia
+-  Categoria deve ser uma das opções válidas
+-  Campos não podem conter apenas espaços
 
-### Operações CRUD
-- ✅ Verificação de ID existente antes de editar/excluir
-- ✅ Confirmação antes de excluir registros
-- ✅ Tratamento de erros de arquivo
-- ✅ Validação de formato do arquivo TXT
+## Operações CRUD
+-  Verificação de ID existente antes de editar/excluir
+-  Confirmação antes de excluir registros
+-  Tratamento de erros de arquivo
+-  Validação de formato do arquivo TXT
 
-## 🎨 Características Visuais
+##  Características Visuais
 
-### Tema Mágico
-- 🌌 Fundo azul escuro (cor mágica)
-- 💜 Painéis em tons de roxo
-- ✨ Textos dourados para destaque
-- 🖥️ Chat estilo terminal (fundo preto, texto verde)
+## Tema Mágico
+-  Fundo azul escuro (cor mágica)
+-  Painéis em tons de roxo
+-  Textos dourados para destaque
+-  Chat estilo terminal (fundo preto, texto verde)
 
-### Organização
-- 📱 Interface responsiva
-- 🔄 Atualização automática da tabela
-- ⏳ Indicadores de carregamento
-- 📊 Tabela com scroll automático
+## Organização
+-  Interface responsiva
+-  Atualização automática da tabela
+-  Indicadores de carregamento
+-  Tabela com scroll automático
 
-## 🚨 Tratamento de Erros
+##  Tratamento de Erros
 
-### Erros Comuns e Soluções
+## Erros Comuns e Soluções
 1. **Erro de compilação**: Verifique se o JDK está instalado
 2. **Arquivo não encontrado**: O arquivo TXT é criado automaticamente
 3. **Interface não abre**: Verifique se há suporte ao Swing
@@ -166,9 +166,9 @@ O Merlin reage às perguntas com diferentes emoções:
 - Console mostra detalhes técnicos
 - Sistema continua funcionando mesmo com erros pontuais
 
-## 🎬 Demonstração para Vídeo
+##  Demonstração para Vídeo
 
-### Roteiro Sugerido (5+ minutos)
+## Roteiro Sugerido (5+ minutos)
 
 1. **Introdução** (30s)
    - "Bem-vindos ao Grimório Digital do Mago Merlin!"
@@ -206,7 +206,7 @@ O Merlin reage às perguntas com diferentes emoções:
    - Categorias temáticas
    - Interface mágica
 
-## 👥 Créditos
+##  Créditos
 
 - **Desenvolvedor**: [Seu Nome]
 - **Disciplina**: Programação Java
@@ -215,11 +215,11 @@ O Merlin reage às perguntas com diferentes emoções:
 
 ---
 
-## 📞 Suporte
+##  Suporte
 
 Para dúvidas ou problemas:
 1. Verifique se todos os arquivos .java estão no mesmo diretório
 2. Confirme que o JDK está corretamente instalado
 3. Execute sempre a partir do diretório do projeto
 
-**🧙‍♂️ Que a magia do código esteja com você!**
+**Que a magia do código esteja com você!**
