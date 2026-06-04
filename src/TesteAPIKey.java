@@ -4,7 +4,7 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
 public class TesteAPIKey {
-    private static final String API_KEY = "AIzaSyB3Q1h7ltCU-kuGg4dtkuzpCJnvHxWHO_w";
+    private static final String API_KEY = "Secret";
 
     public static void main(String[] args) {
         System.out.println("🔍 Testando chave de API do Gemini...\n");
