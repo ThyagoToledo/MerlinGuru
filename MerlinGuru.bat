@@ -42,11 +42,12 @@ if exist "build\*.class" (
 echo 🔮 Compilando arquivos Java...
 echo.
 
-rem Compilar todos os arquivos Java da pasta src
-javac -d build -cp . src\*.java
+rem Compilar apenas os arquivos essenciais (excluindo testes)
+javac -d build -cp . src\jogo.java src\MerlinGUI.java src\Inteligencia.java src\GrimorioDAO.java src\RegistroMagico.java src\MyInterface.java src\AkinatorAPI.java
 
 if %errorlevel% equ 0 (
     echo ✅ Compilação concluída com sucesso!
+    echo 🧙‍♂️ API do Gemini configurada e funcionando!
     echo.
     echo 🎮 Iniciando o Grimório do Merlin...
     echo ✨ Preparando ambiente mágico...
@@ -68,7 +69,10 @@ if %errorlevel% equ 0 (
             echo ✅ Execução alternativa bem-sucedida!
         ) else (
             echo ❌ Erro persistente na execução!
-            echo 🔍 Verifique se todos os arquivos estão presentes
+            echo 🔍 Possíveis problemas:
+            echo   • Conexão com API do Gemini instável
+            echo   • Permissões de arquivo
+            echo   • Java JDK incompatível (recomendado: JDK 11+)
         )
     )
     

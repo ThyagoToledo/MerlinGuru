@@ -1,0 +1,196 @@
+ROTEIRO DE APRESENTAÇÃO - GRIMÓRIO DIGITAL DO MAGO MERLIN
+Tempo total estimado: 6-8 minutos
+
+==================== INTRODUÇÃO [0:00 - 1:00] ====================
+
+[TELA: Desktop com pasta do projeto]
+
+Olá! Meu nome é [SEU NOME] e hoje vou apresentar o projeto "Grimório Digital do Mago Merlin", 
+desenvolvido em Java com interface gráfica Swing. Este é um aplicativo educativo e interativo 
+que combina elementos de RPG, inteligência artificial e gerenciamento de dados.
+
+[MOSTRAR: Pasta do projeto com estrutura de arquivos]
+
+O projeto foi desenvolvido seguindo todos os requisitos solicitados: possui interface gráfica 
+funcional, implementa operações CRUD completas sobre registros armazenados em arquivo de texto, 
+e inclui validações e funcionalidades extras que tornam a experiência única e envolvente.
+
+Vamos começar executando o aplicativo para ver como ele funciona na prática.
+
+[AÇÃO: Clicar duas vezes no arquivo MerlinGuru.bat]
+
+==================== INTERFACE GRÁFICA [1:00 - 2:30] ====================
+
+[TELA: Aplicativo abrindo e carregando]
+
+Como podem ver, o aplicativo possui um design temático medieval muito bem elaborado. 
+A interface apresenta:
+
+1. Um fundo que simula uma biblioteca mágica com estantes de livros e objetos místicos
+2. O personagem Merlin centralizado na tela, dando vida ao aplicativo
+3. Uma área de chat na parte inferior onde as conversas acontecem
+4. Um campo de entrada para o usuário digitar suas perguntas
+5. Uma caixa de seleção para escolher a categoria da pergunta
+6. Cinco botões principais de navegação
+
+[MOSTRAR: Apontar cada elemento da interface]
+
+O layout é totalmente responsivo, adaptando-se ao tamanho da janela. Todos os elementos 
+foram cuidadosamente posicionados para proporcionar uma experiência imersiva e intuitiva.
+
+As cores escolhidas - dourado para os botões, tons escuros para o chat - seguem uma 
+paleta medieval que combina perfeitamente com o tema mágico do aplicativo.
+
+==================== FUNCIONALIDADE PRINCIPAL - CRUD [2:30 - 4:00] ====================
+
+Agora vou demonstrar a funcionalidade principal: o sistema de perguntas e respostas com 
+operações CRUD completas.
+
+[AÇÃO: Digitar uma pergunta no campo de entrada]
+
+Vou fazer uma pergunta sobre feitiços: "Como criar uma poção de cura mágica?"
+
+[AÇÃO: Selecionar categoria "FEITICOS" no dropdown]
+
+Agora vou selecionar a categoria "FEITIÇOS" para que Merlin saiba o contexto da pergunta.
+
+[AÇÃO: Clicar no botão "CONSULTAR MERLIN"]
+
+Ao clicar em "Consultar Merlin", o sistema:
+1. Valida a entrada para garantir que não está vazia
+2. Envia a pergunta para a inteligência artificial
+3. Recebe uma resposta personalizada
+4. Determina a emoção de Merlin baseada no conteúdo
+5. Salva automaticamente no arquivo de texto "grimorio_merlin.txt"
+
+[MOSTRAR: Resposta aparecendo no chat]
+
+Perfeito! Merlin respondeu de forma detalhada e contextualizada. Note que ele não apenas 
+deu a resposta, mas também demonstrou conhecimento especializado sobre o assunto.
+
+Vou fazer mais algumas perguntas para popular nosso histórico:
+
+[AÇÃO: Fazer 2-3 perguntas adicionais de categorias diferentes]
+
+"Qual é a criatura mais perigosa de um calabouço?" - categoria CRIATURAS
+"Como vencer um dragão em batalha?" - categoria BATALHA
+
+==================== HISTÓRICO E OPERAÇÕES CRUD [4:00 - 5:30] ====================
+
+Agora vou demonstrar o sistema de histórico e as operações CRUD completas.
+
+[AÇÃO: Clicar no botão "VER HISTÓRICO"]
+
+Quando clico em "Ver Histórico", uma tabela aparece mostrando todas as consultas realizadas. 
+A tabela contém:
+- ID único de cada consulta
+- A pergunta feita
+- A categoria selecionada
+- A emoção demonstrada por Merlin
+- Data e hora da consulta
+
+[MOSTRAR: Apontar cada coluna da tabela]
+
+Agora vou demonstrar as operações CRUD:
+
+**EDITAR (UPDATE):**
+[AÇÃO: Selecionar uma linha da tabela e clicar em "EDITAR"]
+
+Ao selecionar uma consulta e clicar em "Editar", abre uma janela onde posso modificar 
+tanto a pergunta quanto a categoria. Vou alterar esta pergunta...
+
+[AÇÃO: Modificar texto e salvar]
+
+Perfeito! A alteração foi salva automaticamente no arquivo de texto e a tabela foi atualizada.
+
+**EXCLUIR (DELETE):**
+[AÇÃO: Selecionar outra linha e clicar em "EXCLUIR"]
+
+Para excluir, seleciono uma consulta e clico em "Excluir". O sistema pede confirmação 
+para evitar exclusões acidentais...
+
+[AÇÃO: Confirmar exclusão]
+
+A consulta foi removida do arquivo e da tabela.
+
+**LIMPAR TUDO:**
+[AÇÃO: Mostrar o botão "LIMPAR TUDO"]
+
+Este botão permite limpar todo o histórico de uma vez, com dupla confirmação para segurança máxima.
+
+==================== FUNCIONALIDADE EXTRA - AKINATOR [5:30 - 6:30] ====================
+
+Uma das funcionalidades extras mais interessantes é o modo Akinator.
+
+[AÇÃO: Clicar no botão "JOGO AKINATOR"]
+
+No modo Akinator, Merlin tenta adivinhar um personagem que você está pensando. 
+O sistema possui uma base de conhecimento com mais de 100 personagens de diferentes 
+categorias: fantasia, filmes, jogos, anime, história e literatura.
+
+[MOSTRAR: Primeira pergunta do Akinator aparecendo]
+
+Vou pensar em um personagem famoso... Harry Potter. Agora vou responder às perguntas:
+
+[AÇÃO: Responder algumas perguntas com "SIM" e "NÃO"]
+
+"Seu personagem é do mundo da magia?" - SIM
+"Ele é um jovem estudante?" - SIM  
+"Ele usa óculos?" - SIM
+
+[MOSTRAR: Merlin fazendo a adivinhação]
+
+Impressionante! Merlin conseguiu adivinhar que eu estava pensando em Harry Potter!
+
+Se ele errasse, eu poderia continuar o jogo para dar mais chances a ele.
+
+==================== VALIDAÇÕES E PERSISTÊNCIA [6:30 - 7:00] ====================
+
+O sistema possui várias validações importantes:
+
+[AÇÃO: Tentar enviar pergunta vazia]
+
+Se tento enviar uma pergunta vazia, o sistema não permite e mostra uma mensagem de aviso.
+
+[AÇÃO: Mostrar arquivo grimorio_merlin.txt]
+
+Todas as operações são persistidas automaticamente neste arquivo de texto. 
+Vamos abri-lo para ver como os dados são armazenados:
+
+[MOSTRAR: Conteúdo do arquivo TXT]
+
+Como podem ver, cada registro contém ID, pergunta, resposta, categoria, emoção e data, 
+separados por pipes (|) para facilitar a leitura e manipulação dos dados.
+
+==================== CONCLUSÃO [7:00 - 7:30] ====================
+
+O Grimório Digital do Mago Merlin demonstra todos os requisitos solicitados:
+
+✅ Interface gráfica funcional e atrativa
+✅ Operações CRUD completas (Create, Read, Update, Delete)
+✅ Persistência em arquivo de texto
+✅ Validações de entrada apropriadas
+✅ Design intuitivo e organizado
+✅ Funcionalidades extras criativas (Akinator, sistema de emoções)
+
+O projeto vai além dos requisitos mínimos, oferecendo uma experiência rica e interativa 
+que combina aprendizado, diversão e tecnologia.
+
+Agora vou fechar o aplicativo para finalizar a demonstração.
+
+[AÇÃO: Fechar aplicativo]
+
+Obrigado pela atenção! Este foi o Grimório Digital do Mago Merlin, um projeto que mostra 
+como a programação pode ser usada para criar experiências educativas e divertidas.
+
+==================== FIM DA APRESENTAÇÃO [7:30] ====================
+
+DICAS PARA GRAVAÇÃO:
+- Fale de forma clara e pausada
+- Demonstre cada funcionalidade na prática
+- Mostre tanto sucessos quanto validações de erro
+- Deixe tempo para o sistema processar as respostas
+- Mantenha o foco na tela durante as demonstrações
+- Use um tom entusiasmado mas profissional
+
+TEMPO TOTAL ESTIMADO: 7 minutos e 30 segundos
