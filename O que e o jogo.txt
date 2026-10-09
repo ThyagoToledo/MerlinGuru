@@ -1,4 +1,4 @@
-Chave api gemini: [REDACTED_GOOGLE_API_KEY]
+Chave da API Gemini: configure GEMINI_API_KEY no ambiente local; nunca grave a chave no codigo ou no Git.
 
 Jogo do mago guru Merlin, ele vai responder perguntas relacionadas a Rpg e a magia do usuário, com interface, terá reações de acordo com a pergunta e humor, o usuário poderá escrever os textos para conversar com o Merlin, usando a API do google gemini, texto formatado para o usuário e ele o código recebera uma parte do texto que não aparecera para o usuário que diz a emoção dele
 

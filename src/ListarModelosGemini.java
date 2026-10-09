@@ -4,9 +4,13 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
 public class ListarModelosGemini {
-    private static final String API_KEY = "[REDACTED_GOOGLE_API_KEY]";
+    private static final String API_KEY = System.getenv("GEMINI_API_KEY");
 
     public static void main(String[] args) {
+        if (API_KEY == null || API_KEY.isBlank()) {
+            System.err.println("Configure GEMINI_API_KEY antes de consultar os modelos.");
+            return;
+        }
         try {
             System.out.println("🔍 Listando modelos disponíveis na API do Gemini...");
 

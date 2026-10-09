@@ -4,7 +4,7 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
 public class Inteligencia {
-    private static final String API_KEY = "[REDACTED_GOOGLE_API_KEY]";
+    private static final String API_KEY = System.getenv("GEMINI_API_KEY");
     private static final String API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key="
             + API_KEY;
 
@@ -27,6 +27,9 @@ public class Inteligencia {
     }
 
     public RespostaMerlin processarPergunta(String pergunta, String categoria) {
+        if (API_KEY == null || API_KEY.isBlank()) {
+            return new RespostaMerlin("Configure GEMINI_API_KEY para habilitar a integração Gemini.", "MISTERIOSO");
+        }
         try {
             // Criar prompt contextualizado para o Mago Merlin
             String prompt = criarPromptMerlin(pergunta, categoria);

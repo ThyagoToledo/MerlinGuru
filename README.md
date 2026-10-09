@@ -189,3 +189,8 @@ Os dados do CRUD são salvos localmente na raiz do projeto no arquivo `grimorio_
     </td>
   </tr>
 </table>
+
+
+## Configuração segura da API Gemini
+
+Defina a variável de ambiente `GEMINI_API_KEY` antes de iniciar o aplicativo. Não coloque chaves em arquivos versionados nem em builds distribuídos; chaves usadas em clientes locais podem ser extraídas do equipamento. Crie uma chave restrita no Google AI Studio/Google Cloud e revogue imediatamente qualquer chave que já tenha sido publicada.

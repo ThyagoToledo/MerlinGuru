@@ -4,9 +4,13 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
 public class DiagnosticoAPI {
-    private static final String API_KEY = "[REDACTED_GOOGLE_API_KEY]";
+    private static final String API_KEY = System.getenv("GEMINI_API_KEY");
 
     public static void main(String[] args) {
+        if (API_KEY == null || API_KEY.isBlank()) {
+            System.err.println("Configure GEMINI_API_KEY antes de executar o diagnóstico.");
+            return;
+        }
         System.out.println("🔍 Diagnóstico completo da API do Gemini...\n");
 
         // Teste 1: Verificar se a API key está válida
@@ -24,7 +28,7 @@ public class DiagnosticoAPI {
 
     private static void testarChaveAPI() {
         System.out.println("=== TESTE 1: Validação da API Key ===");
-        System.out.println("API Key: " + API_KEY.substring(0, 10) + "...");
+        System.out.println("Chave Gemini configurada.");
         System.out.println("Fonte: AI Studio Google (aistudio.google.com)");
         System.out.println();
     }

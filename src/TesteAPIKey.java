@@ -4,9 +4,13 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
 public class TesteAPIKey {
-    private static final String API_KEY = "Secret";
+    private static final String API_KEY = System.getenv("GEMINI_API_KEY");
 
     public static void main(String[] args) {
+        if (API_KEY == null || API_KEY.isBlank()) {
+            System.err.println("Configure GEMINI_API_KEY antes de testar a API.");
+            return;
+        }
         System.out.println("🔍 Testando chave de API do Gemini...\n");
 
         // Teste 1: Verificar se a chave tem formato válido
@@ -23,7 +27,7 @@ public class TesteAPIKey {
 
     private static void verificarFormatoChave() {
         System.out.println("=== TESTE 1: Formato da Chave ===");
-        System.out.println("Chave: " + API_KEY.substring(0, 15) + "...");
+        System.out.println("Chave Gemini configurada.");
         System.out.println("Tamanho: " + API_KEY.length() + " caracteres");
         System.out.println("Prefixo: " + (API_KEY.startsWith("AIza") ? "✅ Válido" : "❌ Inválido"));
         System.out.println("Origem: Google AI Studio");
