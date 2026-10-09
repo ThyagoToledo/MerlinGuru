@@ -1,3 +1,9 @@
 # Compilados Java e Diretorios de Build
 *.class
 build/
+
+# Local environment secrets; commit only explicit example templates
+.env
+.env.*
+!.env.example
+!.env.*.example
