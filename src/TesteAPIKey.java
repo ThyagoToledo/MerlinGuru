@@ -37,7 +37,7 @@ public class TesteAPIKey {
     private static void testarEndpointModelos() {
         System.out.println("=== TESTE 2: Endpoint de Modelos ===");
 
-        String url = "https://generativelanguage.googleapis.com/v1/models?key=" + API_KEY;
+        String url = "https://generativelanguage.googleapis.com/v1/models";
 
         try {
             HttpURLConnection conn = criarConexao(url, "GET");
@@ -72,8 +72,7 @@ public class TesteAPIKey {
     private static void testarRequisicaoMinima() {
         System.out.println("=== TESTE 3: Requisição Mínima ===");
 
-        String url = "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key="
-                + API_KEY;
+        String url = "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent";
 
         // JSON mínimo possível
         String jsonMinimo = "{\n" +
@@ -136,6 +135,7 @@ public class TesteAPIKey {
     private static HttpURLConnection criarConexao(String urlStr, String metodo) throws Exception {
         URL url = new URL(urlStr);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestProperty("x-goog-api-key", API_KEY);
         conn.setRequestMethod(metodo);
         conn.setConnectTimeout(15000);
         conn.setReadTimeout(30000);

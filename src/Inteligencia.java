@@ -5,8 +5,7 @@ import java.nio.charset.StandardCharsets;
 
 public class Inteligencia {
     private static final String API_KEY = System.getenv("GEMINI_API_KEY");
-    private static final String API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key="
-            + API_KEY;
+    private static final String API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent";
 
     public static class RespostaMerlin {
         private String resposta;
@@ -94,6 +93,7 @@ public class Inteligencia {
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
         // Configurar conexão
+        connection.setRequestProperty("x-goog-api-key", API_KEY);
         connection.setRequestMethod("POST");
         connection.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
         connection.setDoOutput(true);

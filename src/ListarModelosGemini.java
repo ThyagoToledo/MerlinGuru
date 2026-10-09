@@ -18,11 +18,12 @@ public class ListarModelosGemini {
 
             for (String versao : versoes) {
                 System.out.println("\n=== Testando versão " + versao + " ===");
-                String apiUrl = "https://generativelanguage.googleapis.com/" + versao + "/models?key=" + API_KEY;
+                String apiUrl = "https://generativelanguage.googleapis.com/" + versao + "/models";
 
                 URL url = new URL(apiUrl);
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
+                connection.setRequestProperty("x-goog-api-key", API_KEY);
                 connection.setRequestMethod("GET");
                 connection.setConnectTimeout(10000);
                 connection.setReadTimeout(30000);

@@ -41,7 +41,7 @@ public class DiagnosticoAPI {
         for (String versao : versoes) {
             try {
                 System.out.println("Testando versão: " + versao);
-                String url = "https://generativelanguage.googleapis.com/" + versao + "/models?key=" + API_KEY;
+                String url = "https://generativelanguage.googleapis.com/" + versao + "/models";
 
                 String resposta = fazerRequisicaoGET(url);
 
@@ -80,7 +80,7 @@ public class DiagnosticoAPI {
         for (String versao : versoes) {
             for (String modelo : modelos) {
                 String url = "https://generativelanguage.googleapis.com/" + versao + "/models/" + modelo
-                        + ":generateContent?key=" + API_KEY;
+                        + ":generateContent";
 
                 try {
                     String resposta = testarEndpoint(url);
@@ -100,8 +100,7 @@ public class DiagnosticoAPI {
     private static void testarRequisicaoSimples() {
         System.out.println("=== TESTE 4: Requisição de Teste ===");
 
-        String url = "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key="
-                + API_KEY;
+        String url = "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent";
 
         String jsonRequest = "{\n" +
                 "  \"contents\": [{\n" +
@@ -139,6 +138,7 @@ public class DiagnosticoAPI {
         try {
             URL url = new URL(urlStr);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setRequestProperty("x-goog-api-key", API_KEY);
             conn.setRequestMethod("GET");
             conn.setConnectTimeout(10000);
             conn.setReadTimeout(10000);
@@ -174,6 +174,7 @@ public class DiagnosticoAPI {
         try {
             URL url = new URL(urlStr);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setRequestProperty("x-goog-api-key", API_KEY);
 
             conn.setRequestMethod("POST");
             conn.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
@@ -221,6 +222,7 @@ public class DiagnosticoAPI {
             // Fazer uma requisição HEAD para verificar se o endpoint existe
             URL url = new URL(urlStr);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setRequestProperty("x-goog-api-key", API_KEY);
             conn.setRequestMethod("POST");
             conn.setRequestProperty("Content-Type", "application/json");
             conn.setDoOutput(true);
